@@ -1,0 +1,92 @@
+[{
+    "name":"National Award for Senior Citizens",
+    "description":"Scheme of National Award for Senior Citizens (Vayoshreshtha Sammans) was launched in 2005 and is dedicated to senior citizens. The Scheme is funded by the Central government. This scheme is applicable for eminent senior citizens and institutes involved in rendering distinguished services for the cause of elderly persons. Institutes and senior citizens can avail this scheme by contacting Ministry of Social Justice and Empowerment.",
+    "Link":"https://www.india.gov.in/people-groups/life-cycle/senior-citizens#:~:text=Scheme%20of%20National%20Award%20for%20Senior%20Citizens%20(Vayoshreshtha%20Sammans)%20was,funded%20by%20the%20Central%20government."
+},
+{
+    "name":"Atal pension schemes",
+    "description":"You can search pension benefit schemes of the Central and State Governments offered to citizens. To search various pension benefit schemes, you need to select the criterion such as your gender, age, occupation, state, and provide your mobile number, etc.",
+    "Link":"https://www.india.gov.in/spotlight/atal-pension-yojana"
+},
+{
+    "name":"Mukhyamantri Tirth Yatra Yojana - Delhi",
+    "description":"Any resident of the national capital aged 60 or above can avail of the scheme after acquiring a certificate from a local MLA, stating that he lives in the legislator’s constituency.",
+    "Link":"https://edistrict.delhigovt.nic.in/"
+
+},
+{
+    "name":"Senior Citizen Savings Scheme",
+    "description":"A Senior Citizens Savings Scheme (SCSS) account is a retirement benefit account that is supported by the Indian government",
+    "Link":"https://www.bankbazaar.com/saving-schemes/senior-citizen-saving-scheme.html"
+},
+{
+"name":"Rashtriya Vayoshri Yojana",
+"description":" A scheme for providing physical Aids and Assisted living devices to Senior Citizens.",
+"Link":"https://www.india.gov.in/spotlight/rashtriya-vayoshri-yojana"
+},
+{
+    "name":"Scheme of Integrated Programme for Senior Citizens",
+    "description":"Setting up of Homes to improve the quality of life of the Senior Citizens, especially indigent senior citizens by providing basic amenities like shelter, food, medical care and entertainment opportunities and by encouraging productive and active ageing.",
+    "Link":"https://socialjustice.gov.in/public/ckeditor/upload/Integrated%20Programme%20for%20Senior%20Citizens-Executive%20Summary_1648795432.pdf"
+},
+    {
+    "name": "Pradhan Mantri Jan Dhan Yojana",
+    "description": "A financial inclusion program launched by the Government of India to ensure access to financial services like banking savings & deposit accounts, remittance, credit, insurance, and pension in an affordable manner.",
+    "link": "https://pmjdy.gov.in/"
+  },
+  {
+    "name": "Swachh Bharat Abhiyan",
+    "description": "A nation-wide campaign in India aiming to clean up the streets, roads, and infrastructure of Indian cities, towns, and rural areas.",
+    "link": "https://swachhbharat.mygov.in/"
+  },
+  {
+    "name": "Ayushman Bharat Yojana",
+    "description": "A health insurance scheme launched by the Government of India to provide free health coverage at the secondary and tertiary level to its bottom 40% poor and vulnerable population.",
+    "link": "https://www.pmjay.gov.in/"
+  },
+  {
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "description": "A central sector scheme with the aim to provide income support to all landholding farmers' families across the country and enable them to meet expenses related to agriculture and allied activities.",
+    "link": "https://pmkisan.gov.in/"
+  },
+  {
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+    "description": "A social security scheme that aims to provide livelihood and employment security to rural workers by guaranteeing at least 100 days of wage employment in a financial year to every household whose adult members volunteer to do unskilled manual work.",
+    "link": "https://nrega.nic.in/netnrega/home.aspx"
+  },
+  {
+    "name": "Digital India Programme",
+    "description": "An initiative by the Government of India to ensure that government services are made available to citizens electronically by improving online infrastructure and by increasing Internet connectivity.",
+    "link": "https://www.digitalindia.gov.in/"
+  },
+  {
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "description": "A housing initiative by the Government of India aimed at providing affordable housing to urban and rural poor households through various schemes like Credit Linked Subsidy Scheme (CLSS), Affordable Housing in Partnership (AHP), and Beneficiary Led Construction (BLC).",
+    "link": "https://pmaymis.gov.in/"
+  },
+  {
+    "name": "Skill India Mission",
+    "description": "An initiative launched to empower the youth of the country with skill sets which make them more employable and self-sustainable. It aims to train over 400 million people in different skills by 2022.",
+    "link": "https://www.skillindia.gov.in/"
+  },
+  {
+    "name": "Startup India",
+    "description": "A flagship initiative of the Government of India intended to build a strong ecosystem for nurturing innovation and startups in the country. It includes policies and programs to support startups through various stages of their lifecycle.",
+    "link": "https://www.startupindia.gov.in/"
+  },
+  {
+    "name": "Atal Pension Yojana (APY)",
+    "description": "A pension scheme aimed at providing a steady income to workers in the unorganized sector during their old age. It is focused on providing pension benefits to workers who are not covered by any statutory social security scheme.",
+    "link": "https://www.npscra.nsdl.co.in/scheme-details.php"
+  },
+  {
+    "name": "Ujjwala Yojana",
+    "description": "An initiative to provide free LPG connections to women from below-poverty-line (BPL) households to help them switch to clean cooking fuel and improve their health and quality of life.",
+    "link": "https://ujjwalayojana.org/"
+  },
+  {
+    "name": "National Health Mission (NHM)",
+    "description": "A program launched to provide accessible, affordable, and quality healthcare to the rural population, especially the vulnerable sections. It encompasses various initiatives aimed at improving maternal and child health, reducing infant mortality, and controlling communicable diseases.",
+    "link": "https://nhm.gov.in/"
+  }
+]

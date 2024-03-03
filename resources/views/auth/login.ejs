@@ -1,0 +1,73 @@
+<style>
+    body{
+        background-image: url('https://source.unsplash.com/1600x900/?technology');
+    }
+    .container {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.container form {
+  margin-top: 20px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+</style>
+
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <% if(messages.error) { %>
+            <span class="text-red-500 text-sm"><%= messages.error %></span>
+            <% } %>
+      <input type="text" name="email" placeholder="Enter Your Email" required>
+      <input type="password" name="password" placeholder="Enter Your Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="/register">Sign Up</a></p>
+  </div>

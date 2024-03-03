@@ -1,0 +1,49 @@
+
+
+<!-- <section class="menu container mx-auto py-8">
+  <h1 class="text-xl font-bold mb-8 px-6" id="all_food">Jobs for Specially-Abled Persons</h1>
+  <div class="row" style=" width: 70%; margin-top: 5px; display: flex; padding-left: 20px;">
+    <!-- <% jobs.forEach(function(job){ %>
+      <div class="card col-lg-4 col-md-6" style="border: 2px solid black; margin: 5px;">
+        <h6 style="text-align: center; border-bottom: 2px solid black;"><%=job.CompanyName%></h6>
+        <p style="margin-left: 10px;">Job Description:-</p>
+        <p style="margin-left: 10px;"><%=job.Job_Description%></p>
+    
+        <button style="padding: 10px; border: 2px solid red; margin: 5px; text-align: center;">Role:- <a href=<%=job.Link%> target="_blank"><%=job.Role%></a></button>
+    
+      </div>
+    <% }) %>
+  </div>
+</section>
+ -->
+ <style>
+  .card-list{
+    display: flex;
+   flex-wrap: wrap;
+  }
+  .card{
+    width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+ </style>
+
+<h1 class="text-xl font-bold mb-8 px-10" id="all_food" style="text-align: center;margin-top: 20px;color: hsl(217, 100%, 12%);font-size: 2rem;font-family:Poppins", sans-serif;">Jobs for Specially-Abled Persons</h1>
+ <div class="card-list">
+<% jobs.forEach(function(job){ %>
+<div class="card ">
+  <h2 class="job-title"><%=job.Role%></h2>
+  <p class="company"><%=job.CompanyName%></p>
+  <p class="location"><%=job.Job_Location%></p>
+  <a class="button" href=<%=job.Link%> target="_blank">Go to Company Website</a>
+</div>
+  <% }) %>
+
+</div>
+
+
+

@@ -1,0 +1,38 @@
+
+
+
+<section   class="home">
+    <aside>
+        <img src="/img/hero-pizza.jpg" alt="Image" style="border-radius: 10px;">
+      </aside>
+      
+      <div class="main-content clearfix">
+        <div class="main-content-text">
+          <h2 style="font-size: larger;font-weight: 900;">Helping Senior Citizen</h2>
+          <p>Our main motive is to provide all the services in a single application so that thay can easily use our application.</p>
+          <p>Raise awareness about issues affecting seniors in your community by sharing information through social media, community events, or local newspapers.</p>
+        </div>
+      </div>
+</section>
+
+<h1 class="text-xl font-bold mb-8 px-10" id="all_food" style="text-align: center;margin-top: 20px;color: hsl(217, 100%, 12%);font-size: 4rem;font-family:Poppins", sans-serif;">All Food</h1>
+
+<div class="menu">
+    <% pizzas.forEach(function(pizza) { %>
+    <div class="menu-item">
+      <img src="/img/<%= pizza.image %>" alt="Burger">
+      <h3><%= pizza.name %></h3>
+      <span class="size" style="background-color: #ccc;padding: 10px 10px 10px 10px ;"><%= pizza.size %></span>
+      <p>₹<%= pizza.price %></p>
+      <button data-pizza="<%= JSON.stringify(pizza) %>"
+        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+        <span>+</span>
+        <span class="ml-4">Add</span>
+    </button>
+    </div>
+    <% }) %>
+</div>
+
+
+
+

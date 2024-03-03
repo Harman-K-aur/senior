@@ -1,0 +1,111 @@
+ <!-- <h1 style="text-align: center;font-weight: 900;border: 2px solid black;padding: 20px;">Government Schemes</h1>
+ <div class="card-list">
+  <% schemes.forEach(function(scheme,index){ %>
+  <div class="card">
+    <div class="card-content">
+      <span style="float: right;border: 1px solid black;  width: 30px;
+      height: 30px;border-radius: 50%;background-color: blue;color: #fff; text-align: center;font-weight: bolder;"><%= index+1%></span>
+      <h3 class="card-title" style="border-bottom: 1px solid black;"><%=scheme.name%></h3>
+      <span></span>
+      <p class="card-description"><%=scheme.description%></p>
+      <a href="<%=scheme.link%>" class="card-link" target="_blank">Read More <span>>>></span></a>
+    </div>
+  </div>
+  <% }) %>
+</div> -->
+<style>
+  .cards{
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .card {
+    position: relative;
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+}
+
+.card p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  
+}
+
+.card a:hover {
+  background-color: #45a049;
+}
+.subicons{
+  position: absolute;
+  right: 0;
+  top: 0;
+  float: right;
+  border: 1px solid black;
+  width:30px;
+  height: 30px;
+ 
+  border-radius: 50%;
+  background-color: blue;
+  color: #fff; 
+  text-align: center;
+  font-weight: bolder;
+}
+</style>
+<h1 class="text-xl font-bold mb-8 px-10" id="all_food" style="text-align: center;margin-top: 20px;color: hsl(217, 100%, 12%);font-size: 2rem;font-family:Poppins", sans-serif;">All Government Schemes</h1>
+<div class="cards">
+<% schemes.forEach(function(scheme,index){ %>
+<div class="card">
+  <span class="subicons"><%=index+1%></span>
+  <h2><%=scheme.name%></h2>
+  <p>
+  <% if(scheme.description.length<=100) { %>
+    <%=scheme.description%>
+<% } else { %>
+  <%=scheme.description.substring(0,100)%>
+  <span id="dots<%= scheme.id %>">.....</span>
+  <span id="more<%= scheme.id %>" style="display:none;">
+      <%=scheme.description.substring(100) %>
+  </span>
+  <button id="myBtn<%= scheme.id %>" onclick="readMore('<%= scheme.id %>')" style="font-weight: bolder;">Read more</button>
+<% } %>
+</p>
+</div>
+<% }) %>
+</div>
+
+<script>
+  function readMore(cardId) {
+        var dots = document.getElementById("dots" + cardId);
+        var moreText = document.getElementById("more" + cardId);
+        var btnText = document.getElementById("myBtn" + cardId);
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "...Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>

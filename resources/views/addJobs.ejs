@@ -1,0 +1,64 @@
+<style>
+    body{
+        background-image:url('/img/form.jpg')
+    }
+.container {
+    background-image:url('../../public/img/form.jpg');
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.container form {
+  margin-top: 20px;
+}
+
+.container input[type="text"],
+.container input[type="url"],
+.container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
+
+
+<div class="container">
+    <h2>Job Application Form</h2>
+    <form action="/addJobs" method="POST">
+      <input type="text" name="CompanyName" placeholder="Company Name" required>
+      <input type="text" name="Job_Location" placeholder="Job Location" required>
+      <input name="Role" type="text" placeholder="Role">
+      <input type="url" name="Link" placeholder="Link to Job Posting" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
