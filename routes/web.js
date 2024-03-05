@@ -4,7 +4,9 @@ const cartController = require('../app/http/controllers/customers/cartController
 const orderController = require('../app/http/controllers/customers/orderController')
 const adminOrderController = require('../app/http/controllers/admin/orderController')
 const statusController = require('../app/http/controllers/admin/statusController')
-
+const emailController=require('../app/http/controllers/emailController')
+const passport = require('passport');
+const User=require('../app/models/user')
 // Middlewares 
 const guest = require('../app/http/middlewares/guest')
 const auth = require('../app/http/middlewares/auth')
@@ -18,7 +20,7 @@ function initRoutes(app) {
     app.get('/login', guest, authController().login)
     app.post('/login', authController().postLogin)
     app.get('/register', guest, authController().register)
-    app.post('/register', authController().postRegister)
+    app.post('/register', emailController().postregister)
     app.post('/logout', authController().logout)
 
     app.get('/cart', cartController().index)
@@ -41,6 +43,9 @@ function initRoutes(app) {
 
     //scheme Routes
     app.get('/schemes', schemeController().schemeindex)
+    
+    app.get('/verify', emailController().verifyEmail);
+    
 
 
 }
