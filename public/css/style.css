@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -32,7 +35,10 @@
   
 }
 .active{
-  font-size: 30px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
 }
 #logout{
   float: right;
@@ -188,6 +194,9 @@
        }
      }
  
+
+
+     
 
 
      
