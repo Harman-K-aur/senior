@@ -1,5 +1,26 @@
-
-
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Permanent+Marker&display=swap');
+ .size{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: larger;
+  font-style:normal;
+  font-weight: bolder;
+ }
+ .price{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+ }
+ .pizza_name{
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: larger;
+ }
+</style>
 
 <section   class="home">
     <aside>
@@ -21,11 +42,11 @@
     <% pizzas.forEach(function(pizza) { %>
     <div class="menu-item">
       <img src="/img/<%= pizza.image %>" alt="Burger">
-      <h3><%= pizza.name %></h3>
-      <span class="size" style="background-color: #ccc;padding: 10px 10px 10px 10px ;"><%= pizza.size %></span>
-      <p>₹<%= pizza.price %></p>
+      <h3 class="pizza_name"><%= pizza.name %></h3>
+      <span class="size" style="background-color: #E0F7FA;padding: 10px 10px 10px 10px ;"><%= pizza.size %></span>
+      <p class="price">₹<%= pizza.price %></p>
       <button data-pizza="<%= JSON.stringify(pizza) %>"
-        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold btn-cart" style="background-color: #0d2c40;">
         <span>+</span>
         <span class="ml-4">Add</span>
     </button>
