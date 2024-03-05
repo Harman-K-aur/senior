@@ -23,6 +23,13 @@ function emailController(){
                 return res.redirect('/register')
              }
          })
+
+        const existingUser = await User.findOne({ email });
+         if (existingUser) {
+             // Render the registration page with an error message
+             req.flash('error', 'Email already taken')
+             return res.render('auth/register');
+         }
          const hashedPassword = await bcrypt.hash(password, 10)
          const user =await User.create({
              name,
