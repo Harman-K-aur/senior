@@ -15,14 +15,7 @@ function emailController(){
          }
 
          // Check if email exists 
-         User.exists({ email: email }, (err, result) => {
-             if(result) {
-                req.flash('error', 'Email already taken')
-                req.flash('name', name)
-                req.flash('email', email) 
-                return res.redirect('/register')
-             }
-         })
+         
 
         const existingUser = await User.findOne({ email });
          if (existingUser) {
