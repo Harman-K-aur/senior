@@ -24,7 +24,7 @@
 
 <section   class="home">
     <aside>
-        <img src="/img/hero-pizza.jpg" alt="Image" style="border-radius: 10px;">
+        <img src="/img/hero-pizza.jpg" alt="Image" style="border-radius: 10px;"  loading="lazy">
       </aside>
       
       <div class="main-content clearfix">
@@ -41,7 +41,7 @@
 <div class="menu">
     <% pizzas.forEach(function(pizza) { %>
     <div class="menu-item">
-      <img src="/img/<%= pizza.image %>" alt="Burger">
+      <img src="/img/<%= pizza.image %>" alt="Burger"  loading="lazy">
       <h3 class="pizza_name"><%= pizza.name %></h3>
       <span class="size" style="background-color: #E0F7FA;padding: 10px 10px 10px 10px ;"><%= pizza.size %></span>
       <p class="price">₹<%= pizza.price %></p>
