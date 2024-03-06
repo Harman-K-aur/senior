@@ -77,7 +77,7 @@ async function sendVerifyEmail(name,email,user_id){
             from:'Helping Senior Citizen Platform',
             to:email,
             subject:'Verify Email to confirm your identity',
-            html:`Hiii `+name+ `!! Hope you are well <p>Please click <a href="https://senior-production.up.railway.app`+process.env.PORT+`/verify?id=`+ user_id +`">here</a> to verify your email.</p>`
+            html:`Hiii `+name+ `!! Hope you are well<p>Please click <a href="https://senior-production.up.railway.app/verify?id=`+ user_id +`">here</a> to verify your email`
         })
         console.log("Email Sent Successfully")
     }catch{
