@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Veg Thali",
+  "image": "thali.jpg",
+  "price": "450",
+  "size": "Serve for 3-4 People"
+},
+{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Rajma with Rice",
+  "image": "rajma-rice.jpg",
+  "price": "80",
+  "size": "Serve For 1 people"
+},
+{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Salad",
+  "image": "salad.jpg",
+  "price": "60",
+  "size": "Serve for 1 people"
+},
+{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Dal-Rice",
+  "image": "dal-rice.webp",
+  "price": "70",
+  "size": "Serve For 1 people"
+},
+{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Khichdi",
+  "image": "khichdi.jpg",
+  "price": "150",
+  "size": "Serve For 2 People"
+},
+{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Oats Smoothies",
+  "image": "oats-smoothies.jpg\n",
+  "price": "120",
+  "size": "Serve for 1 People"
+},
+{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "Daliya",
+  "image": "daliya.webp",
+  "price": "120",
+  "size": "Serve For 2 People"
+},
+{
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Vegetable Soup",
+  "image": "soup.jpg",
+  "price": "100",
+  "size": "Serve For 1 People"
+},
+{
+  "_id": {
+    "$oid": "65d441e25350d530d692cbc4"
+  },
+  "name": "Kadi-Rice",
+  "image": "kadi-chawal.webp",
+  "price": "90",
+  "size": "Serve For 1 People"
+},
+{
+  "_id": {
+    "$oid": "65d442805350d530d692cbc5"
+  },
+  "name": "Raita",
+  "image": "raita.jpg",
+  "price": "50",
+  "size": "Serve For 1 People"
+},
+{
+  "_id": {
+    "$oid": "65d443025350d530d692cbc6"
+  },
+  "name": "Boiled Broccoli",
+  "image": "brocalli.jpg",
+  "price": "150",
+  "size": "Serve For 1 People"
+}]
