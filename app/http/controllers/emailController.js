@@ -15,14 +15,21 @@ function emailController(){
          }
 
          // Check if email exists 
-         
+        
 
-        const existingUser = await User.findOne({ email });
+         const existingUser = await User.findOne({ email });
          if (existingUser) {
              // Render the registration page with an error message
              req.flash('error', 'Email already taken')
              return res.render('auth/register');
          }
+         const Password = req.body.password;
+         const error = checkPasswordStrength(Password);
+         if (error) {
+            req.flash('error', error)
+            return res.render('auth/register');
+        } 
+
          const hashedPassword = await bcrypt.hash(password, 10)
          const user =await User.create({
              name,
@@ -31,6 +38,7 @@ function emailController(){
              password:hashedPassword
             
          })
+        
             sendVerifyEmail(name,email,user._id)
             req.flash('error', 'Registration successful.Please Verify your Email Id')
             return res.redirect('/login')
@@ -69,12 +77,27 @@ async function sendVerifyEmail(name,email,user_id){
             from:'Helping Senior Citizen Platform',
             to:email,
             subject:'Verify Email to confirm your identity',
-            html:`Hiii `+name+ `!! Hope you are well<p>Please click <a href="https://senior-production.up.railway.app/verify?id=`+ user_id +`">here</a> to verify your email.</p>`
+            html:`Hiii `+name+ `!! Hope you are well <p>Please click <a href="http://localhost:`+process.env.PORT+`/verify?id=`+ user_id +`">here</a> to verify your email.</p>`
         })
         console.log("Email Sent Successfully")
     }catch{
         console.log("Email not sent successfully")
     }
+}
+
+
+function checkPasswordStrength(password) {
+    // Minimum length requirement
+    if (password.length < 8) {
+        return "Password is too short. It must be at least 8 characters long.";
+    }
+    // Regular expression to check for alphanumeric characters
+    const alphanumericRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])/;
+    if (!alphanumericRegex.test(password)) {
+        return "Password must contain both letters and numbers.";
+    }
+    // If password passes all checks, return null
+    return null;
 }
 
 
