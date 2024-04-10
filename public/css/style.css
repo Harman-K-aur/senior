@@ -46,6 +46,16 @@
   float: left;
 }
 
+.cart_icon{
+  position: relative;
+ bottom: 23px;
+}
+
+#cartCounter{
+  position: relative;
+  bottom: 15px;
+}
+
 @media screen and (max-width: 800px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
@@ -61,6 +71,16 @@
 }
 .active{
   font-size: 15px;
+}
+
+ .cart_icon{
+  position: relative;
+ bottom: 10px;
+}
+
+#cartCounter{
+  position: relative;
+  bottom: 5px;
 }
 }
 
