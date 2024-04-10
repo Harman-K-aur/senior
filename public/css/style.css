@@ -54,6 +54,7 @@
   }
   .aside{
   float:left;
+      margin-top:0px;
 }
 #logout{
   float: left;
@@ -78,6 +79,7 @@
   }
   .aside {
     float: left;
+      margin-top:0px;
   }
   #logout{
   float: left;
