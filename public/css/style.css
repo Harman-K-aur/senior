@@ -36,12 +36,12 @@
 }
 .active{
   font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: bolder;
+  font-size: 20px;
   font-style: normal;
 }
 #logout{
-  float: right;
+  float: left;
 }
 
 @media screen and (max-width: 800px) {
