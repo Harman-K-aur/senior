@@ -37,8 +37,8 @@
 }
 .active{
   font-family: "Madimi One", sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
+ 
+  font-size: 30px;
   font-style: normal;
 }
 #logout{
