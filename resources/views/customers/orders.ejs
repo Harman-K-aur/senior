@@ -35,7 +35,7 @@
                         <%= order.address %>
                     </td>
                     <td class="border px-4 py-2">
-                        <%= moment(order.createdAt).format('DD/MM/YYYY hh:mm') %>
+                        <%= (order.createdAt).format('DD/MM/YYYY hh:mm A') %>
                     </td>
                     <td class="border px-4 py-2">
                         <%= order.status %>
